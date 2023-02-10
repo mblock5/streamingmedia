@@ -63,7 +63,6 @@ body {
     background-color: #020659;
     margin: 0 auto;
     min-width: 375px;
-    max-width: 834px;
 }
 
 header {
@@ -329,6 +328,8 @@ audio::-webkit-media-controls-enclosure {
     color:#590242;
     background: #590242;
 }
+
+
 #playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
 
 }
