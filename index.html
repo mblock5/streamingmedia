@@ -9,132 +9,135 @@
 </head>
 <body>
     <header>
-        <h1>Smooth Jazz</h1>
-        <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+        <div class="nav_position" id="header_background">
+            <h1>Smooth Jazz</h1>
+            <p id="header_paragraph">This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+        </div>
         <nav>
             <ul>
-                <li id="navTitle"><a href="#">MuzakMaker</a></li>
-                <li><a href="#">Trending Songs</a></li>
-                <li><a href="#">Your playlists</a></li>
-                <li><a href="#">Curated Playlists</a></li>
-                <li><a href="#"><img src="images/duke-silver.png" alt="headshot of duke silver in a hot"></a></li>
+                <li><a id="nav_title" href="#">MuzakMaker</a></li>
+                <li><a class="nav_links" href="#">Trending Songs</a></li>
+                <li><a class="nav_links" href="#">Your playlists</a></li>
+                <li><a class="nav_links" href="#">Curated Playlists</a></li>
+                <li><a class="nav_links" href="#"><img src="images/duke-silver.png" alt="headshot of duke silver in a hot"></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="trending">
             <h2>Trending Songs</h2>
-            <section>
-                <div>
-                    <h3>Aloma</h3>
-                    <dl>
-                        <dt>Artist </dt>
-                        <dd>Cali</dd>
-                    </dl>
-                </div>
-                <img src="images/aloma-cover.png" alt="white bird flying against dark background">
-                <audio controls src="audio/aloma.mp3">
-                </audio>
-            </section>
+            <div class="scroll">
+                <section>
+                    <div class="trending_div">
+                        <h3>Aloma</h3>
+                        <dl>
+                            <dt>Artist </dt>
+                            <dd>Cali</dd>
+                        </dl>
+                    </div>
+                    <img src="images/aloma-cover.png" alt="white bird flying against dark background">
+                    <audio controls src="audio/aloma.mp3">
+                    </audio>
+                </section>
 
-            <section>
-                <div>
-                    <h3>My Road</h3>
-                    <dl>
-                        <dt>Artist</dt>
-                        <dd>Nesterouk</dd>
-                    </dl>
-                </div>
-                <img src="images/my-road-cover.png" alt="view from middle of the road with desert terrain and mountains in the distance">
-                <audio controls src="audio/my-road.mp3"></audio>
-            </section>
+                <section>
+                    <div>
+                        <h3>My Road</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Nesterouk</dd>
+                        </dl>
+                    </div>
+                    <img src="images/my-road-cover.png" alt="view from middle of the road with desert terrain and mountains in the distance">
+                    <audio controls src="audio/my-road.mp3"></audio>
+                </section>
 
-            <section>
-                <div>
-                    <h3>Papaya</h3>
-                    <dl>
-                        <dt>Artist</dt>
-                        <dd>Dredstudio</dd>
-                    </dl>
-                </div>
-                <img src="images/papaya-cover.png" alt="a papaya cut-in-half-, face-up, against a solid green background">
-                <audio controls src="audio/papaya.mp3"></audio>
-            </section>
+                <section>
+                    <div>
+                        <h3>Papaya</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Dredstudio</dd>
+                        </dl>
+                    </div>
+                    <img src="images/papaya-cover.png" alt="a papaya cut-in-half-, face-up, against a solid green background">
+                    <audio controls src="audio/papaya.mp3"></audio>
+                </section>
 
-            <section>
-                <div>
-                    <h3>Smoothies</h3>
-                    <dl>
-                        <dt>Artist</dt>
-                        <dd>Black Rhomb</dd>
-                    </dl>
-                </div>
-                <img src="images/smoothies-cover.png" alt="a smoothie with a pineapple, oranges, bananas, strawberries, and raspberries on a white table against a pink background">
-                <audio controls src="audio/smoothies.mp3"></audio>
-            </section>
+                <section>
+                    <div>
+                        <h3>Smoothies</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Black Rhomb</dd>
+                        </dl>
+                    </div>
+                    <img src="images/smoothies-cover.png" alt="a smoothie with a pineapple, oranges, bananas, strawberries, and raspberries on a white table against a pink background">
+                    <audio controls src="audio/smoothies.mp3"></audio>
+                </section>
 
-            <section>
-                <div>
-                    <h3>Successful Performance</h3>
-                    <dl>
-                        <dt>Artist</dt>
-                        <dd>Ricky Bombino</dd>
-                    </dl>
-                </div>
-                <img src="images/successful-performance-cover.png" alt="a masculine person smiling in a celebratory position against a blue, brick wall">
-                <audio controls src="audio/successful-performance.mp3"></audio>
-            </section>
-        
-            <a href="#">More trending</a>
+                <section>
+                    <div>
+                        <h3>Successful Performance</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Ricky Bombino</dd>
+                        </dl>
+                    </div>
+                    <img src="images/successful-performance-cover.png" alt="a masculine person smiling in a celebratory position against a blue, brick wall">
+                    <audio controls src="audio/successful-performance.mp3"></audio>
+                </section>
+            </div>
+            <a class="button" href="#">More trending</a>
         </section>
 
-        <section>
+        <section class="playlists">
             <h2>Your Playlists</h2>
+            <div class="scroll">
+                <section>
+                    <a href="#">
+                        <img src="images/best-of-2020-cover.png" alt="">
+                        <h3>Best of 2020</h3>
+                        <p>The music that got you through the lock down.</p>
+                    </a>
+                </section>
 
-            <section>
-                <a href="#">
-                    <img src="images/best-of-2020-cover.png" alt="">
-                    <h3>Best of 2020</h3>
-                    <p>The music that got you through the lock down.</p>
-                </a>
+                <section>
+                    <a href="#">
+                        <img src="images/pumpkin-spice-cover.png" alt="">
+                        <h3>Pumpkin Spice</h3>
+                        <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                    </a>
+                </section>
+
+                <section>
+                    <a href="#">
+                        <img src="images/quiet-storm-cover.png" alt="">
+                        <h3>Quiet Storm</h3>
+                        <p>Slow tempos and relaxed rhythms.</p>
+                    </a>
+                </section>
+
+                <section>
+                    <a href="#">
+                        <img src="images/smooth-jazz-cover.png" alt=""> 
+                        <h3>Smooth Jazz</h3>
+                        <p>The pioneers of smooth jazz</p>
+                    </a>
+                </section>
+
+                <section>
+                    <a href="#">
+                        <img src="images/smooth-study-cover.png" alt="">
+                        <h3>Smooth Study</h3>
+                        <p>Background music to keep you going while you study.</p>
+                    </a>
+                </section>
+
+                <a class="button" href="#">All your playlists</a>
+            </div>
             </section>
-
-            <section>
-                <a href="#">
-                    <img src="images/pumpkin-spice-cover.png" alt="">
-                    <h3>Pumpkin Spice</h3>
-                    <p>Creamy and spicy, just like your favorite autumnal latte.</p>
-                </a>
-            </section>
-
-            <section>
-                <a href="#">
-                    <img src="images/quiet-storm-cover.png" alt="">
-                    <h3>Quiet Storm</h3>
-                    <p>Slow tempos and relaxed rhythms.</p>
-                </a>
-            </section>
-
-            <section>
-                <a href="#">
-                    <img src="images/smooth-jazz-cover.png" alt=""> 
-                    <h3>Smooth Jazz</h3>
-                    <p>The pioneers of smooth jazz</p>
-                </a>
-            </section>
-
-            <section>
-                <a href="#">
-                    <img src="images/smooth-study-cover.png" alt="">
-                    <h3>Smooth Study</h3>
-                    <p>Background music to keep you going while you study.</p>
-                </a>
-            </section>
-
-            <a href="#">All your playlists</a>
-        </section>
-
-        <section>
+        <section class="curated">
             <h2>Curated Playlists</h2>
 
             <section>
@@ -177,7 +180,7 @@
                 </a>
             </section>
 
-            <a href="#">More curated</a>
+            <a class="button" href="#">More curated</a>
         </section>
     </main>
     <footer>    
