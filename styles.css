@@ -51,22 +51,316 @@ table {
 
 /*  -------------------- End of CSS reset  --------------------  */
 
-/* ---------- Mobile First ---------- */
+
+
+
+
+
+/* ----------------------- Mobile First ----------------------- */
+
+
+/* -------- Body -------- */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: #020659;
     margin: 0 auto;
-    min-width: 375px;
 }
+
+
+
+
+
+/* -------- Header -------- */
 
 header {
     display: grid;
     background-color: #020873;
+    width: 375px;
+    margin: 0 auto;
 }
+
+header p {
+    padding: 16px 16px 16px 32px;
+    line-height: 1.25em;
+}
+
+h1 {
+    font-size: 1.25em;
+    padding: 16px 16px 0px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1, #header_paragraph {
+    background-image: linear-gradient(to right, #2104D9, #000000)  
+}
+
+
+/* Navigation */
+
+nav {
+    position: absolute;
+    top: 10px;
+}
+
+.nav_position {
+    position: relative;
+}
+
+#nav_title {
+    font-variant: small-caps;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav_links {
+    text-transform: uppercase;
+}
+
+nav a {
+    font-size: 1.2em;
+}
+
+li {
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*  Nav Menu 
+/*  JS Fiddle example:            
+/*  https://jsfiddle.net/1fzgah3n/  */
+
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
+input:checked ~ label span {
+    background: transparent;
+}
+
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0px;
+}
+
+/* -------- Main -------- */
 
 main {
     display: grid;
     background-color: #ffffff;
+    width: 375px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #590242;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 32px 0px 8px 32px
+}
+
+
+h2, h3 {
+    font-size: 1em;
+}
+
+div h3 {
+    color: #590242;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+dl {
+    width: 100%;
+    margin-top: 8px;
+}
+
+dt {
+    font-style: italic;
+}
+
+dt, dd {
+    color: #590242;
+    width: 18%;
+    float: left;
+}
+
+p, dl, dd {
+    font-size: 1em;
+}
+
+/* Trending */
+
+.trending {
+    max-width: 834px;
+}
+
+audio {
+    position: relative;
+    top: -200px;
+}
+
+/*
+audio::-webkit-media-controls-mute-button {
+    
+}
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+    
+} */
+
+
+
+/* Your Playlist */
+
+
+/* Curated Playlist */
+
+
+/* Buttons */
+
+.button {
+    float: right;
+    background-color: #590242;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Scrollbar */
+
+.scroll {
+    display: grid;
+    width: 375px;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.scroll section {
+    margin: 10px;
+    position: relative;
+    height: 325px;
+}
+
+.scroll div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    height: 50px;
+    width: 304px;
+}
+
+/*
+#trending ::-webkit-scrollbar {
+   
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+
+#playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+*/
+/* Footer */
+
+footer p {
+    font-size: 0.75em;
+}
+
+/* ---------- Medium Screen (834px) ---------- */
+
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+
+
 }
