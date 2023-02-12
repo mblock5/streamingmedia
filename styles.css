@@ -76,13 +76,14 @@ body {
 
 header {
     display: grid;
-    background-color: #020873;
+    grid-template-columns: 1fr;
+    background-color: #030A8C;
     width: 375px;
     margin: 0 auto;
 }
 
 header p {
-    padding: 16px 16px 16px 32px;
+    padding: 16px 16px 24px 32px;
     line-height: 1.25em;
 }
 
@@ -101,18 +102,27 @@ h1, #header_paragraph {
 /* Navigation */
 
 nav {
-    position: absolute;
-    top: 10px;
+    display: grid;
+    grid-row-start: 1;
+    position: sticky;
 }
 
-.nav_position {
+#nav_position {
     position: relative;
+    top: 100px;
+    grid-row-start: 2;
 }
 
 #nav_title {
     font-variant: small-caps;
     font-size: 2em;
     font-weight: bold;
+    position: absolute;
+    width: 375px;
+    height: 58px;
+    top: 20px;
+    left: 50%;
+    margin-left: -187.5px;
 }
 
 .nav_links {
@@ -125,12 +135,14 @@ nav a {
 
 li {
     text-align: center;
+    line-height: 1.25em;
 }
 
 ul a {
     text-decoration: none;
     color: white;
 }
+
 
 
 /*  Nav Menu 
@@ -240,23 +252,32 @@ dt {
 
 dt, dd {
     color: #590242;
-    width: 18%;
     float: left;
+}
+
+dd {
+    margin-left: 8px;
 }
 
 p, dl, dd {
     font-size: 1em;
 }
 
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /* Trending */
 
-.trending {
-    max-width: 834px;
+#trending {
+    height: 350px;
 }
 
 audio {
     position: relative;
     top: -200px;
+    left: 30px;
 }
 
 /*
@@ -274,19 +295,60 @@ audio::-webkit-media-controls-enclosure {
 
 /* Your Playlist */
 
+#playlists {
+    background-color: #2699FB;
+    padding-bottom: 16px;
+}
+
+.playlists {
+    background-color: #0D8DFB;
+    padding: 10px;
+}
+
+section.playlists h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 4px 0px 8px 0px;
+}
+
+section.playlists p {
+    text-align: center;
+}
 
 /* Curated Playlist */
 
+#curated {
+    background-color: #030A8C;
+    padding-bottom: 22px;
+}
+
+.curated {
+    background-color: #020873;
+    padding: 10px;
+}
+
+section.curated h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 4px 0px 8px 0px;
+}
+
+section.curated p {
+    text-align: center;
+}
+
+.trending_details {
+    
+}
 
 /* Buttons */
 
 .button {
-    float: right;
+    float: left;
     background-color: #590242;
     padding: 10px 30px;
     border-radius: 4px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 10px 0px 15px 20px;
 }
 
 /* Scrollbar */
@@ -302,16 +364,15 @@ audio::-webkit-media-controls-enclosure {
 .scroll section {
     margin: 10px;
     position: relative;
-    height: 325px;
 }
 
-.scroll div {
+.scroll div[class="trending_details"] {
     position: absolute;
     top: 251px;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 5px;
     height: 50px;
-    width: 304px;
+    width: 311px;
 }
 
 /*
@@ -345,22 +406,152 @@ audio::-webkit-media-controls-enclosure {
 
 footer p {
     font-size: 0.75em;
+    background-color: #FFFFFF;
+    color: #590242;
+    text-align: center;
+    margin: 0 auto;
+    padding: 32px 0px;
+    width: 375px;
 }
 
 /* ---------- Medium Screen (834px) ---------- */
 
 @media screen and (min-width:834px) {
+
+
+    /* Header */
+
+    header {
+        width: 834px;
+    }
+
+    
+    /* Navigation */
+
+    nav {
+        height: 75px;
+    }
+
     ul {
         overflow: visible;
         position: absolute;
         top: 0;
         margin-top: 16px;
+        margin-left: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 834px;
     }
+
     label span, input {
         display: none;
     }
 
+    #nav_title {
+        position: static;
+        margin: 0;
+    }
 
+
+    /* Main */
+
+        main {
+            width: 834px;
+        }
+
+    /* Button */
+
+        .button {
+            float: right;
+            margin: 10px 20px 15px 0px;
+        }
+        
+    /* Trending */
+
+    #trending {
+        width: 834px;
+    }
+
+
+    /* Your Playlists */
+
+    #playlists {
+        width: 417px;
+    }
+
+    .scroll[id="playlists"] {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .playlists {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    /* Curated Playlists */
+
+    #curated {
+        width: 417px;
+    }
+
+    .scroll[id="curated"] {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 2;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .curated {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+    /* Your Playlists + Curated Playlists */
+
+    #playlist_columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+
+    /* Footer */
+
+    footer {
+        margin: 0 auto;
+        width: 834px;
+        background-color: #FFFFFF;
+    }
+    
+}
+
+
+
+
+
+
+/*
+
+.scroll section {
+    margin: 10px;
+    position: relative;
+}
+
+
+
+
+section.playlists h3 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 4px 0px 8px 0px;
+}
+
+section.playlists p {
+    text-align: center;
 }
