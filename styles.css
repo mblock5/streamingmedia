@@ -227,7 +227,7 @@ h2 {
     color: #590242;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 32px 0px 8px 32px
+    margin: 24px 0px 8px 32px
 }
 
 
@@ -295,6 +295,10 @@ audio::-webkit-media-controls-enclosure {
 
 /* Your Playlist */
 
+#your_playlists {
+    height: 368px;
+}
+
 #playlists {
     background-color: #2699FB;
     padding-bottom: 16px;
@@ -330,15 +334,15 @@ section.playlists p {
 section.curated h3 {
     color: #FFFFFF;
     text-align: center;
-    margin: 4px 0px 8px 0px;
+    margin: 4px 8px 8px 8px;
 }
 
 section.curated p {
     text-align: center;
 }
-
+/*
 .trending_details {
-    
+
 }
 
 /* Buttons */
@@ -472,8 +476,8 @@ footer p {
         width: 834px;
     }
 
-
-    /* Your Playlists */
+/*
+    /* Your Playlists 
 
     #playlists {
         width: 417px;
@@ -492,8 +496,8 @@ footer p {
         grid-template-columns: 1fr 2fr;
     }
 
-
-    /* Curated Playlists */
+    
+    /* Curated Playlists 
 
     #curated {
         width: 417px;
@@ -512,8 +516,8 @@ footer p {
         grid-template-columns: 1fr 2fr;
     }
 
-
-    /* Your Playlists + Curated Playlists */
+    
+    /* Your Playlists + Curated Playlists 
 
     #playlist_columns {
         display: grid;
