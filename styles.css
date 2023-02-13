@@ -280,15 +280,17 @@ audio {
     left: 30px;
 }
 
-
+/*
 audio::-webkit-media-controls-mute-button {
     
 }
 audio::-webkit-media-controls-play-button {
-
 }
-audio::-webkit-media-controls-enclosure {
+    */
 
+audio::-webkit-media-controls-enclosure {
+    appearance: none;
+    background-color: #FFFFFF;
 }
 
 
@@ -387,6 +389,7 @@ section.curated p {
 #trending::-webkit-scrollbar-thumb {
     background-color: #590242;
 }
+
 #trending::-webkit-scrollbar-thumb:hover {
     
 }
