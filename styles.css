@@ -476,8 +476,12 @@ footer p {
         width: 834px;
     }
 
-/*
-    /* Your Playlists 
+
+    /* Your Playlists */
+
+    #your_playlists {
+        height: auto;
+    }
 
     #playlists {
         width: 417px;
@@ -486,18 +490,26 @@ footer p {
     .scroll[id="playlists"] {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-start: 1;
         overflow-x: hidden;
         overflow-y: auto;
+        height: 482px;
     }
 
     .playlists {
         display: grid;
-        grid-template-columns: 1fr 2fr;
     }
 
+    img.playlist_column_img {
+      float: left;
+    }
+
+    .playlist_details {
+        float: right;
+        width: 195px;
+        margin-right: 8px;
+    }
     
-    /* Curated Playlists 
+    /* Curated Playlists */
 
     #curated {
         width: 417px;
@@ -506,22 +518,28 @@ footer p {
     .scroll[id="curated"] {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-start: 2;
         overflow-x: hidden;
         overflow-y: auto;
+        height: 476px;
     }
 
     .curated {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+    }
+
+    .curated_details {
+        float: right;
+        width: 186px;
+        margin-right: 8px;
     }
 
     
-    /* Your Playlists + Curated Playlists 
+    /* Your Playlists + Curated Playlists */
 
     #playlist_columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 620px;
     }
     
 
