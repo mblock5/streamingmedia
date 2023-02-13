@@ -192,6 +192,7 @@ label span:after {
 
 input {
     display: none;
+    margin-top: 10px;
 }
 
 input:checked ~ ul {
@@ -280,24 +281,22 @@ audio {
     left: 30px;
 }
 
-/*
+/* Code from video -- not working at the time of submitting; reached out on Slack with no feedback */
 
 audio::-webkit-media-controls-mute-button {
-    
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
+
 audio::-webkit-media-controls-play-button {
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
    
 
 audio::-webkit-media-controls-enclosure {
-    appearance: none;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.5)
 }
-
-*/
-
-
-
 
 
 /* Your Playlist */
@@ -384,36 +383,43 @@ section.curated p {
 }
 
 
-/*
+
+/* Code from video -- not working at the time of submitting; reached out on Slack with no feedback */
 
 #trending::-webkit-scrollbar {
-   
+   width: 15px;
 }
-#trending::-webkit-scrollbar-track {
-    
 
+#trending::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #590242;
 }
+
 #trending::-webkit-scrollbar-thumb {
-    background-color: #590242;
+    background: #590242;
+    border-radius: 5px;
 }
 
 #trending::-webkit-scrollbar-thumb:hover {
-    
+    background: #020659;
 }
 
 #playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
-
+    width: 15px; 
 }
+
 #playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
-
+    box-shadow: inset 0 0 15px #020659;
 }
+
 #playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
-
+    background: #020659;
+    border-radius: 5px;
 }
+
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-
+    background: #FFFFFF;
 }
-*/
+
 
 
 /* Footer */
