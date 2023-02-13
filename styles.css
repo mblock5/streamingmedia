@@ -288,7 +288,7 @@ audio::-webkit-media-controls-play-button {
 
 }
 audio::-webkit-media-controls-enclosure {
-    background: #FFFFFF;
+
 }
 
 
@@ -340,10 +340,7 @@ section.curated h3 {
 section.curated p {
     text-align: center;
 }
-/*
-.trending_details {
 
-}
 
 /* Buttons */
 
@@ -380,18 +377,18 @@ section.curated p {
 }
 
 
-#trending ::-webkit-scrollbar {
-   background: #590242;
+#trending::-webkit-scrollbar {
+   
 }
-#trending ::-webkit-scrollbar-track {
-    background: #590242;
+#trending::-webkit-scrollbar-track {
+    
 
 }
-#trending ::-webkit-scrollbar-thumb {
-    background: #590242;
+#trending::-webkit-scrollbar-thumb {
+    background-color: #590242;
 }
-#trending ::-webkit-scrollbar-thumb:hover {
-    background: #020873;
+#trending::-webkit-scrollbar-thumb:hover {
+    
 }
 /*
 #playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
