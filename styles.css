@@ -280,7 +280,7 @@ audio {
     left: 30px;
 }
 
-/*
+
 audio::-webkit-media-controls-mute-button {
     
 }
@@ -288,8 +288,8 @@ audio::-webkit-media-controls-play-button {
 
 }
 audio::-webkit-media-controls-enclosure {
-    
-} */
+    background-color: rgba(255, 255, 255, 0.75);
+}
 
 
 
@@ -379,20 +379,22 @@ section.curated p {
     width: 311px;
 }
 
-/*
+
 #trending ::-webkit-scrollbar {
-   
+   background-color: #590242;
 }
 #trending ::-webkit-scrollbar-track {
+    background-color:#590242;
+
 
 }
 #trending ::-webkit-scrollbar-thumb {
-
+    background-color: #590242;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-
+    background-color: #020873;
 }
-
+/*
 #playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
 
 }
@@ -551,29 +553,4 @@ footer p {
         background-color: #FFFFFF;
     }
     
-}
-
-
-
-
-
-
-/*
-
-.scroll section {
-    margin: 10px;
-    position: relative;
-}
-
-
-
-
-section.playlists h3 {
-    color: #FFFFFF;
-    text-align: center;
-    margin: 4px 0px 8px 0px;
-}
-
-section.playlists p {
-    text-align: center;
 }
