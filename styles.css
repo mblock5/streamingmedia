@@ -218,7 +218,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 
 main {
     display: grid;
-    background-color: black;
+    background-color: #FFFFFF;
     width: 375px;
     margin: 0 auto;
 }
