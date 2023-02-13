@@ -288,7 +288,7 @@ audio::-webkit-media-controls-play-button {
 
 }
 audio::-webkit-media-controls-enclosure {
-    background-color: #FFFFFF;
+    background: #FFFFFF;
 }
 
 
@@ -381,18 +381,17 @@ section.curated p {
 
 
 #trending ::-webkit-scrollbar {
-   background-color: #590242;
+   background: #590242;
 }
 #trending ::-webkit-scrollbar-track {
-    background-color:#590242;
-
+    background: #590242;
 
 }
 #trending ::-webkit-scrollbar-thumb {
-    background-color: #590242;
+    background: #590242;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
-    background-color: #020873;
+    background: #020873;
 }
 /*
 #playlists::-webkit-scrollbar, #curated ::-webkit-scrollbar {
